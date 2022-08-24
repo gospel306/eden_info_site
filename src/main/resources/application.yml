@@ -1,0 +1,18 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    url: jdbc:mariadb://192.168.50.239:3306/anothereden?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: gospel306
+    password: monxzdr12
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        hbm2ddl.auto: none
+        format_sql: true
